@@ -79,7 +79,7 @@ function App() {
 
   const fetchProjects = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/projects');
+      const response = await fetch('https://portfolio-pjr6.onrender.com/api/projects');
       const data = await response.json();
       setProjects(data);
     } catch (error) {
@@ -89,7 +89,7 @@ function App() {
 
   const fetchSkills = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/skills');
+      const response = await fetch('https://portfolio-pjr6.onrender.com/api/skills');
       const data = await response.json();
       setSkills(data);
     } catch (error) {
@@ -102,7 +102,7 @@ function App() {
     setFormStatus('Sending message...');  // Update status while sending the message
   
     try {
-      const response = await fetch('http://localhost:5000/api/contact', {
+      const response = await fetch('https://portfolio-pjr6.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -580,7 +580,7 @@ I'm a passionate Full Stack Developer with expertise in building scalable web ap
           <a href="https://github.com/sriramprasad1528" target="_blank" rel="noopener noreferrer" className="footer-link">
             <FaGithub className="h-6 w-6" />
           </a>
-          <a href="c" target="_blank" rel="noopener noreferrer" className="footer-link">
+          <a href="https://www.linkedin.com/in/sriram-prasad-thota-922876268/" target="_blank" rel="noopener noreferrer" className="footer-link">
             <FaLinkedin className="h-6 w-6" />
           </a>
           <a href="https://www.instagram.com/always_ramu___?igsh=MXBzNGgwOXVmYzFyMg==" target="_blank" rel="noopener noreferrer" className="footer-link">
