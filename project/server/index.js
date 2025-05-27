@@ -16,10 +16,10 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB URI - Make sure this is correct
-const mongooseURI = "mongodb+srv://sriram:1234@cluster0.5snmfg3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const mongooseURI = "mongodb+srv://GK:Gk2312@cluster0.kpavp.mongodb.net/Portfolio?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose.connect(mongooseURI)
-  .then(() => console.log('Connected to MongoDB -  Database'))
+  .then(() => console.log('Connected to MongoDB - Portfolio Database'))
   .catch((error) => console.error('MongoDB connection error:', error));
 
 // Nodemailer Setup for sending contact emails
